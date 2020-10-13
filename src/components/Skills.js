@@ -8,7 +8,7 @@ function Skills() {
                     <div className="soft_skill is_active">
                             <div className="soft soft_anime">
                                 <div className="skill_title ">
-                                    Problem Solving🧐
+                                    Problem Solving
                                 </div>
                                 <p className='skill_para'>I ponder that I have good ability to solve
                                     numerous technical problem because of 
@@ -21,7 +21,7 @@ function Skills() {
                             </div>
                             <div className="soft soft_anime">
                                 <div className="skill_title">
-                                Active listener & learner👂🏻
+                                    Active listener & learner
                                 </div>
                                 <p className='skill_para'>I believe that I am an active and effective learner and
                                     listen to every single detail before implementing the 
@@ -32,7 +32,7 @@ function Skills() {
                             </div>
                             <div className="soft soft_anime">
                                 <div className="skill_title">
-                                Team player🎮
+                                    Team player
                                 </div>
                                 <p className='skill_para'>I understand and appreciate the fact that a team
                                     environment is both productive and efficient. I have
