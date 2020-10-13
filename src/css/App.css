@@ -16,6 +16,7 @@
         left: 24px;
     }
 }
+
 @media (max-width:600px){
     .logo_contanier{
         position: absolute;
