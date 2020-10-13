@@ -1,0 +1,216 @@
+.skills_section{
+    width: 100vw;
+    max-width: 100%;
+    /* height: 0px; */
+    /* height: 800px; */
+    /* heigth change krni hai */
+    background: var(--other-color);
+    /* padding: 80px 100px 50px 100px; */
+    padding: 24px 24px;
+    display: flex;
+    justify-content: center;
+}
+.skill_area{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+}
+.soft_skill{
+    width: 100%;
+}
+.soft{
+    border-radius: 3px;
+    margin-bottom: 24px;
+    background: var(--secondary-color);
+    padding: 0.6em 1em 1em 1em;
+    font-family: 'Raleway', sans-serif;
+}
+.skill_title{
+    margin-bottom: 8px;
+    font-size: 1.6em;
+    color: var(--third-color);
+}
+.skill_para{
+    font-size: 1em;
+    color: var(--sixth-color);
+    font-family: 'Archivo', sans-serif;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: justify;
+
+}
+.table{
+    display: flex;
+}
+.soft_1_part{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 59px 0px 0px 0px;
+    position: relative;
+    width: 25%;
+    font-size: 12px;
+    color: #ffffff;
+}
+.x_point{
+    margin-bottom: 25.5px;
+}
+.soft_2_part{
+    width: 75%;
+    position: relative;
+}
+.y_points{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 12px;
+    color: #ffffff;
+    
+}
+.y_point{
+    position: relative;
+    padding: 10px;
+}
+.y_point::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    border: none;
+    border-top: 3px solid #ffffff;
+    height: 4px;
+    width: 3px;
+}
+.table_origin{
+    width: 100%;
+    border: 2px solid #ffffff;
+    border-right:none;
+    border-bottom: none;
+    margin-bottom: 15px;
+    padding: 16px 0px 1px 0;
+}
+.progress{
+    height: 24px;
+    width: 90%;
+    border-radius: 0 15px 15px 0;
+    margin-bottom: 16px;
+    position: relative;
+}
+.intermediate{
+    background: linear-gradient(90deg,var(--fourth-color) 0%,var(--fifth-color) 40%, var(--seventh-color)100%);
+    width: 60%;
+}
+.beginner{
+    background: linear-gradient(90deg,var(--fourth-color) 0%,var(--fifth-color) 100%);
+    width: 30%;
+}
+.progress::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    border: none;
+    border-top: 3px solid #ffffff;
+    width: 4px;
+    height: .5px;
+}
+@media (min-width:500px){
+    .skills_section{
+        padding: 50px 50px 0px 50px;
+    }
+}
+@media (min-width:1000px){
+    .skills_section{
+        height: 100vh;
+        padding: 50px 100px 0px 100px;
+    }
+    .skill_area{
+        display: flex;
+        flex-direction: row;
+    }
+    .skill_1{
+        padding: 24px 0px;
+        width: 50%;
+        margin-right: 60px;
+    }
+    .soft_skill{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        /* padding: 24px 24px; */
+    }
+    .soft{
+        max-width: 560px;
+        margin-bottom: 0px;
+    }
+    .skill_title{
+        font-size: 28px;
+    }
+    .skill_2{
+        /* padding: 24px 24px 24px 0px; */
+        padding: 24px 0px;
+        width: 50%;
+    }
+    .stack_table{
+        height: 100%;
+    }
+    .table{
+        max-width: 100%;
+        height: 100%;
+    }
+    .x_point{
+        margin-bottom: 24.5px;
+        margin-left: 24px;
+    }
+    .progress{
+        height: 25px;
+        margin-bottom: 16px;
+    }
+}
+@media (max-height:850px) and (min-width:1000px){
+    .skills_section{
+        height: 760px;
+        max-height: 100%;
+        padding: 80px 100px 20px 100px;
+    }
+    .x_point{
+        margin-bottom: 18.3px;
+    }
+    .progress{
+        height: 18px;
+        margin-bottom: 15px;
+    }
+}
+@media (min-width:1400px){
+    .soft_1_part{
+        width: 20%;
+    }
+    .soft_2_part{
+        width: 80%;
+        position: relative;
+    }
+}
+@media (min-height:850px) and (min-width:1000px){
+    .skills_section{
+        height: 850px;
+    }
+    .soft{
+        max-width: 530px;
+    }
+    .table{
+        font-size: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+    .skill_title{
+        font-size: 2em;
+    }
+    .x_point{
+        margin-bottom: 26.5px;
+    }
+}

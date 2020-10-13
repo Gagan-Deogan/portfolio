@@ -1,0 +1,120 @@
+.header-nav{
+    position: fixed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    top: 0;
+    z-index: 3;
+    height: 65px;
+    width: 100vw;
+    max-width: 100%;
+}
+.header-nav::after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fourth-color);
+    z-index: -1;
+    border-radius: 0px 0px 3px 3px ;
+    transform-origin:50% 0 ;
+}
+
+.option_container_responsive{
+    display: none;
+}
+.option_container{
+    font-size: 16px;
+    font-weight: 400;
+    color: #eeeeee;
+    padding: 20px 0;
+    font-family: 'Raleway', sans-serif;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.options{
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.options_underline{
+    /* display: none; */
+    content: '';
+    background-color: #D97BD2;
+    width: 0%;
+    height: 4px;
+    margin:2px 0 ;
+    transform-origin: 0%;
+    transition: width 500ms ease-in-out;
+}
+@media (max-width:600px){
+    .header-nav{
+        bottom: 0;
+        top: auto;
+    }
+    .option_container_responsive{
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 24px 0px 24px;
+        background: #09040F;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        border-radius: 4px 4px 0 0 ;
+    }
+    .icon_options_home,.icon_options_portfolio,.icon_options_skill,.icon_options_contact{
+        position: relative;
+        font-family: 'Archivo', sans-serif;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50px;
+        font-size: 12px;
+        color: #eeeeee;
+        /* border-radius: 30px; */
+    }
+    .icon_options_home::before,.icon_options_portfolio::before,.icon_options_skill::before,.icon_options_contact::before{
+        width: 24px;
+        height: 24px;
+        content: '';
+        margin-bottom: 5px;
+    }
+    .icon_options_home::before{
+        background: url(../images/home-solid.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .icon_options_portfolio::before{
+        background: url(../images/briefcase-solid.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .icon_options_skill::before{
+        background: url(../images/bolt-solid.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .icon_options_contact::before{
+        background: url(../images/envelope-solid.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .nav_active{
+        background:linear-gradient(-0deg,var(--secondary-color) 0%,var(--primary-color) 60% );
+        border-bottom: 8px solid var(--seventh-color);
+    }
+    .option_container{
+        display: none;
+    }
+}

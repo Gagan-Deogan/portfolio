@@ -1,0 +1,25 @@
+.logo_contanier{
+    content: '';
+    position: fixed;
+    top: 8px;
+    left: 90px;
+    width: 145px;
+    height: 52px;
+    z-index: 100;
+    background: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+}
+@media (max-width:1000px){
+    .logo_contanier{
+        left: 24px;
+    }
+}
+@media (max-width:600px){
+    .logo_contanier{
+        position: absolute;
+        top: 24px;
+        left: 24px;
+    }
+}
