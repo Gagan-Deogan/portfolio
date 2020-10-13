@@ -1,0 +1,70 @@
+.footer{
+    display: flex;
+    background: var(--secondary-color);
+    height: 100px;
+    padding: 24px 100px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+.footer_logo{
+    height: 120%;
+    width: 145px;
+    background: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.importantlinks{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--seventh-color);
+}
+.importantlinks > .dm_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    width: 180px;
+}
+.git{
+    background: url(../images/git-hub-03.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hacker{
+    background: url(../images/hacker-03.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.importantlinks > .dm_links> .dm_circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+}
+.footer_line{
+    color: #ffffff;
+}
+@media (max-width:1000px){
+    .footer{
+        padding: 24px 50px;
+    }
+}
+@media (max-width:600px){
+    .footer{
+        height: 300px;
+        padding: 24px 24px 70px;
+        flex-direction: column;
+    }
+    .footer_logo{
+        /* border: 2px solid red; */
+        /* width: 0%; */
+        height: 70px;
+    }
+}

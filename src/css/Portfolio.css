@@ -1,0 +1,199 @@
+.portfolio_section{
+    width: 100vw;
+    max-width: 100%;
+    background-color:var(--other-color);
+    padding: 80px 180px 0px 180px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    background-color: transparent;
+}
+.title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--third-color);
+}
+.glide1{
+    position:relative;
+    width:100%;
+    box-sizing:border-box;
+}
+.glide1 *{box-sizing:inherit}
+.glide__slides{
+    padding: 20px 0;
+    cursor: pointer;
+}
+.project_div{
+    height: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    padding: 0px;
+}
+.project_container{
+    box-sizing: border-box;
+    position: relative;
+    margin: 20px 80px 0 3px;
+    width: 260px;
+    height: 360px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 10px 10px 2px #00000063;
+}
+.project_img{
+    height: 180px;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    background: var(--fourth-color);
+    transform-origin: 0 0;
+}
+.project_title{
+    display: flex;
+    justify-content: space-between;
+}
+.project_name{
+    font-size: 24px;
+    margin: 15px 0 8px 15px;
+    font-family: 'Raleway','san-serif';
+    font-weight: 600;
+    color: var(--third-color);
+}
+.projects_link{
+    margin: 15px 20px 8px 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--third-color);
+    background-image: url(../images/web.svg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    /* border: 2px solid red; */
+}
+   
+.project_description{
+    font-size: 14px;
+    margin: 0px 16px 0 16px ;
+    font-family: 'Archivo', sans-serif;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--sixth-color);
+}
+.control_div{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    box-shadow: inset -100px -30px 30px 0px #0b0612a8;
+    /* border: 2px solid red; */
+}
+
+.next{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background: var(--fourth-color);
+    background-image: url(../images/arrow-left-solid.svg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+    transform: rotate(180deg);
+}
+.next:hover{
+    box-shadow: 0 0px 4px 1px #a856a3a6;
+    transform: translate(0, -5px);
+    transition: 500ms;
+}
+.next:hover{
+    transform: translate(0, -5px) rotate(180deg);
+}
+
+button:focus {
+    outline: none;
+    outline-offset: none;
+}
+button:active{
+    border: none;
+}
+@media (min-height:1100px)and(max-width:1000px){
+    .portfolio_section{
+      height: 100vh;
+      max-height: 1000px;
+    }
+}
+@media (max-width:500px) {
+    .portfolio_section{
+        padding: 24px 0 40px 24px;
+        /* height: 100vh; */
+    }
+    .title{
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    .project_div{
+        margin-bottom: 18px;
+    }
+    .project_container{
+        margin: 20px 80px 0 3px;
+        width: 200px;
+        height: 270px;
+        border-radius: 3px;
+        box-shadow: 0 2px 8px 2px #121212d5;
+    }
+    .project_img{
+        height: 140px;
+        border-radius: 3px 3px 0 0;
+    }
+    .project_name{
+        font-size: 20px;
+        margin: 10px 0 5px 10px;
+    }
+    .projects_link{
+        margin: 10px 15px 5px 10px;
+        width: 24px;
+        height: 24px;
+    }
+    .project_description{
+        font-size: 10px;
+        line-height: 12px;
+        margin: 0px 16px 0 10px ;
+        opacity: .7;
+    }
+    .control_div{
+        width: 50px;
+        box-shadow: inset -20px -0px 20px 2px #181628c9;
+    }
+    .next{
+        margin-right: 20px;
+        width: 24px;
+        height: 24px;
+    }
+}
+@media (max-width:1500px){
+    .portfolio_section{
+        padding: 50px 100px 0px 100px;
+    }
+}
+@media (max-width:1000px){
+    .portfolio_section{
+        padding: 50px 50px 0px 50px;
+    }
+}
+@media (max-width:500px){
+    .portfolio_section{
+        /* height: 0; */
+        padding: 24px 0 50px 24px ;
+    }
+}
+/* heigth of portfolio */

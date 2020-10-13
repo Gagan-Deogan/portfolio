@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color:#09040f;
+  --secondary-color:#181628;
+  --third-color:#ffffff;
+  --fourth-color:#3f368e;
+  --fifth-color:#6555f3;
+  --sixth-color:#A856A2;
+  --seventh-color:#D97BD2;
+  --other-color:#0B0612;
+}
+body {
+  width: 100vw;
+  max-width: 100% ;
+  box-sizing: border-box ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
