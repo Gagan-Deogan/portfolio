@@ -71,15 +71,16 @@
   position: relative;
   /* text-stroke: 1px #eeeeee; */
 }
-/* .text_span_1::before{
-  content: ' ';
+.text_span_1::before{
+  content: '';
   position: absolute;
   left: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background: #eeeeee;
   transform-origin: 100% 0;
-} */
+}
 .text_span_1::after{
   position: 'absolute';
   top: 0;

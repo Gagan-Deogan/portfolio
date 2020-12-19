@@ -16,7 +16,7 @@ function Section() {
            living in the beautiful city Patiala. Currently, I pursuing Degree in CE at 
            Punjabi University, Patiala. <br/>
           </p>
-          <button className='primary_button anime2 '>Learn more</button>
+          <button className='primary_button anime2' id='learn' >Learn more</button>
         </div>
       </div>
     )
