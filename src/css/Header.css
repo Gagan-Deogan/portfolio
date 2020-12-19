@@ -27,7 +27,7 @@
 }
 .option_container{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     color: #eeeeee;
     padding: 20px 0;
     font-family: 'Raleway', sans-serif;
@@ -36,6 +36,7 @@
     justify-content: space-around;
 }
 .options{
+    cursor: pointer;
     height: 40px;
     display: flex;
     flex-direction: column;

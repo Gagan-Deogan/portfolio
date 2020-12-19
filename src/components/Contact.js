@@ -1,6 +1,22 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../css/Contact.css'
+import { gsap ,ScrollToPlugin,ScrollTrigger} from "gsap/all";
+import CSSRulePlugin from "gsap/CSSRulePlugin";
 function Contact() {
+    const myAnimation=()=>{
+        gsap.registerPlugin(CSSRulePlugin,ScrollTrigger,ScrollToPlugin);
+        const t4 = gsap.timeline({
+            scrollTrigger:{
+                trigger:'.contact_section'
+            },
+        });
+        t4.from('.contact_anime',{y:150,opacity:0,duration:1.5})
+
+      }
+    
+    useEffect(() => {
+    myAnimation();
+    }, []);
     const onFormSubmit = (e)=>{
         e.preventDefault();
         const form = document.forms["submit-to-google-sheet"];

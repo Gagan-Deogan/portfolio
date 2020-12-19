@@ -1,6 +1,22 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../css/Skills.css'
+import { gsap ,ScrollToPlugin,ScrollTrigger} from "gsap/all";
+import CSSRulePlugin from "gsap/CSSRulePlugin";
 function Skills() {
+    const myAnimation=()=>{
+        gsap.registerPlugin(CSSRulePlugin,ScrollTrigger,ScrollToPlugin);
+        const t3 = gsap.timeline({
+            scrollTrigger:{
+                trigger:'.skills_section'
+            },
+        });
+        t3.from('.soft_anime',{x:50,opacity:0,duration:1.5});
+      }
+    
+      useEffect(() => {
+        myAnimation();
+      }, []);
+
     return (
         <div className='skills_section' id='section3'>
             <div className="skill_area">

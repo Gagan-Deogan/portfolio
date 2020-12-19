@@ -12,24 +12,90 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Gagan Deogan | Home</title>
   </head>
-  <body onload="myAnimation()">
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <script>
+      function init(){
+        function elementInViewport2(el) {
+      var top = el.offsetTop;
+      var left = el.offsetLeft;
+      var width = el.offsetWidth;
+      var height = el.offsetHeight;
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      while(el.offsetParent) {
+          el = el.offsetParent;
+          top += el.offsetTop;
+          left += el.offsetLeft;
+      }
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <script src="./js/gsap.min.js"></script>
-    <script src="./js/glider.js"></script>
-    <script src="./js/CSSRulePlugin.min.js"></script>
-    <script src="./js/ScrollTrigger.min.js"></script>
-    <script src="./js/ScrollToPlugin.min.js"></script>
-    <script src="main.js"></script>
+      return (
+          top >= window.pageYOffset &&
+          left >= window.pageXOffset &&
+          (top + height) <= (window.pageYOffset + window.innerHeight) &&
+          (left + width) <= (window.pageXOffset + window.innerWidth)
+      );
+  }
+  // nav bar setting
+  function onVisibilityChange(el, callback) {
+      var old_visible;
+      return function () {
+          el.forEach((ele,index)=>{
+              if(elementInViewport2(ele)){
+                  var visible = index;
+                  if (visible != old_visible && old_visible!==undefined ) {
+                      if (typeof callback == 'function') {
+                          callback(visible,old_visible);
+                          old_visible = visible;
+                      }
+                  }else{
+                      if(old_visible===undefined){
+                          console.log('here its is');
+                          const underlines = document.querySelectorAll('.options_underline');
+                          const resposive_underline = document.querySelectorAll('.res_options');
+                          if(underlines){
+                              underlines[visible].style.width = '110%';
+                          }
+                          if(resposive_underline){
+                              resposive_underline[visible].classList.add('nav_active');
+                          }
+                          old_visible = visible;
+                      }
+                  }
+              } 
+          });
+      }
+    }
+    console.log('gog')
+        const isActive = document.querySelectorAll('.is_active');
+        var handler = onVisibilityChange(isActive, function(visible,old_visible){
+            old_visible = old_visible || 0;
+            const underlines = document.querySelectorAll('.options_underline');
+            const resposive_underline = document.querySelectorAll('.res_options');
+            if(underlines){
+                underlines[visible].style.width = '110%';
+                underlines[old_visible].style.width = '0px';            
+            }
+            if(resposive_underline){
+                resposive_underline[visible].classList.add('nav_active');
+                resposive_underline[old_visible].classList.remove('nav_active');
+            }
+        });
+        if (window.addEventListener) {
+            addEventListener('DOMContentLoaded', handler, false);
+            addEventListener('load', handler, false);
+            addEventListener('scroll', handler, false);
+            addEventListener('resize', handler, false);
+            handler();
+        } else if (window.attachEvent)  {
+            attachEvent('onDOMContentLoaded', handler); // Internet Explorer 9+ :(
+            attachEvent('onload', handler);
+            attachEvent('onscroll', handler);
+            attachEvent('onresize', handler);
+            handler();
+        }
+      }
+      window.addEventListener('load',init);
+    </script>
   </body>
 </html>
