@@ -63,13 +63,18 @@ function myAnimation(){
         },
         scale:'0'
     });
+
+    document.getElementById('learn').addEventListener('click',()=>{
+        gsap.to(window,{duration:'500ms',scrollTo:{y:'#section2'}, offsetY:0})
+    });
+
     if(document.querySelectorAll('.options')){
         document.querySelectorAll('.options').forEach((btn,index)=>{
             btn.addEventListener('click',()=>{
                 document.querySelectorAll('.options_underline').forEach((under,i)=>{
                    i===index ? under.style.width='110%' : under.style.width='0%' ;
                 })
-                gsap.to(window,{duration:1,scrollTo:{y: "#section"+(index+1), offsetY: 0}})
+                gsap.to(window,{duration:'500ms',scrollTo:{y: "#section"+(index+1), offsetY: 0}})
             })
         });
     }
@@ -79,7 +84,7 @@ function myAnimation(){
                 document.querySelectorAll('.options_underline').forEach((under,i)=>{
                     i===index ? under.style.width='110%' : under.style.width='0%' ;
                 })
-                gsap.to(window,{duration:1,scrollTo:{y: "#section"+(index+1), offsetY: 0}})
+                gsap.to(window,{duration:'500ms',scrollTo:{y: "#section"+(index+1), offsetY: 0}})
             })
         })
     }
