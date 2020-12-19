@@ -9,7 +9,6 @@ function Skills() {
                             <div className="soft soft_anime">
                                 <div className="skill_title ">
                                     Problem Solving
-                                    <span>🧐</span>
                                 </div>
                                 <p className='skill_para'>I ponder that I have good ability to solve
                                     numerous technical problem because of 
@@ -23,7 +22,6 @@ function Skills() {
                             <div className="soft soft_anime">
                                 <div className="skill_title">
                                     Active listener & learner
-                                    <span>👂🏻</span>
                                 </div>
                                 <p className='skill_para'>I believe that I am an active and effective learner and
                                     listen to every single detail before implementing the 
@@ -35,13 +33,12 @@ function Skills() {
                             <div className="soft soft_anime">
                                 <div className="skill_title">
                                     Team player
-                                    <span>🎮</span>
                                 </div>
                                 <p className='skill_para'>I understand and appreciate the fact that a team
                                     environment is both productive and efficient. I have
                                     the ability to compromise, show respect to others
                                     and listen to the needs of my teammates. While I 
-                                    can be a leader when necessary, I can also play an
+                                    can be a  leader when necessary, I can also play an
                                     equal role on the team when the situation merits
                                 </p>
                             </div>
