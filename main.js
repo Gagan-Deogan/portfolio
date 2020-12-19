@@ -164,11 +164,8 @@ function myAnimation(){
         attachEvent('onresize', handler);
         handler();
     }
-
-
-
     // Glider ------------------------------------------------------
-    new Glide(".glide",{type:"carousel",startAt:0,perView:3,gap:50,breakpoints:{1200:{perView:3,peek:{before:0,after:80}},1100:{perView:3,peek:{before:0,after:0}},1000:{perView:3,peek:{before:0,after:0}},900:{perView:2,peek:{before:0,after:150}},800:{perView:2,peek:{before:0,after:80}},700:{perView:2,peek:{before:0,after:20}},600:{perView:1,peek:{before:0,after:180}},500:{perView:2,peek:{before:0,after:0}},400:{perView:1,peek:{before:0,after:100}},300:{perView:1,peek:{before:0,after:0}}},peek:{before:0,after:170}}).mount(),new Glide(".glide1",{type:"carousel",startAt:0,perView:3,gap:50,breakpoints:{1200:{perView:3,peek:{before:0,after:80}},1100:{perView:3,peek:{before:0,after:0}},1000:{perView:3,peek:{before:0,after:0}},900:{perView:2,peek:{before:0,after:150}},800:{perView:2,peek:{before:0,after:80}},700:{perView:2,peek:{before:0,after:20}},600:{perView:1,peek:{before:0,after:180}},500:{perView:2,peek:{before:0,after:0}},400:{perView:1,peek:{before:0,after:100}},300:{perView:1,peek:{before:0,after:0}}},peek:{before:0,after:170}}).mount();
+    // new Glide(".glide",{type:"carousel",startAt:0,perView:3,gap:50,breakpoints:{1200:{perView:3,peek:{before:0,after:80}},1100:{perView:3,peek:{before:0,after:0}},1000:{perView:3,peek:{before:0,after:0}},900:{perView:2,peek:{before:0,after:150}},800:{perView:2,peek:{before:0,after:80}},700:{perView:2,peek:{before:0,after:20}},600:{perView:1,peek:{before:0,after:180}},500:{perView:2,peek:{before:0,after:0}},400:{perView:1,peek:{before:0,after:100}},300:{perView:1,peek:{before:0,after:0}}},peek:{before:0,after:170}}).mount(),new Glide(".glide1",{type:"carousel",startAt:0,perView:3,gap:50,breakpoints:{1200:{perView:3,peek:{before:0,after:80}},1100:{perView:3,peek:{before:0,after:0}},1000:{perView:3,peek:{before:0,after:0}},900:{perView:2,peek:{before:0,after:150}},800:{perView:2,peek:{before:0,after:80}},700:{perView:2,peek:{before:0,after:20}},600:{perView:1,peek:{before:0,after:180}},500:{perView:2,peek:{before:0,after:0}},400:{perView:1,peek:{before:0,after:100}},300:{perView:1,peek:{before:0,after:0}}},peek:{before:0,after:170}}).mount();
 }
 
 
