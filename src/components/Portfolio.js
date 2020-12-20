@@ -32,7 +32,7 @@ function Portfolio() {
                         <ul className="glide__slides project_div">
                             <li className="glide__slide">
                                 <div className="project_container">
-                                    <div className='project_img'></div>
+                                    <div className='project_img neog'></div>
                                     <div className="project_title">
                                         <h3 className="project_name project_anime">Assignments</h3>
                                         <a href='https://rvkg9.csb.app/' target='_blank' rel="noopener noreferrer" className="projects_link project_anime">
@@ -43,7 +43,7 @@ function Portfolio() {
                             </li>
                             <li className="glide__slide">
                                 <div className="project_container">
-                                    <div className='project_img'></div>
+                                    <div className='project_img youco'></div>
                                     <div className="project_title">
                                         <h3 className="project_name project_anime">Youco</h3>
                                         <a href='https://www.youco.co.in/' target='_blank' rel="noopener noreferrer" className="projects_link project_anime">
@@ -54,7 +54,7 @@ function Portfolio() {
                             </li>
                             <li className="glide__slide">
                                 <div className="project_container">
-                                    <div className='project_img'></div>
+                                    <div className='project_img carona'></div>
                                     <div className="project_title">
                                         <h3 className="project_name project_anime">Carona Counter</h3>
                                         <a href='https://carona-cases-counter.netlify.app/' target='_blank' rel="noopener noreferrer" className="projects_link project_anime">
@@ -77,7 +77,7 @@ function Portfolio() {
                         <ul className="glide__slides project_div">
                             <li className="glide__slide">
                                 <div className="project_container">
-                                    <div className='project_img'></div>
+                                    <div className='project_img itmtb'></div>
                                     <div className="project_title">
                                         <h3 className="project_name project_anime">ITMTB</h3>
                                         <a href='https://itmtb.com/' target='_blank' rel="noopener noreferrer" className="projects_link project_anime">
@@ -88,13 +88,13 @@ function Portfolio() {
                             </li>
                             <li className="glide__slide">
                                 <div className="project_container">
-                                    <div className='project_img'></div>
+                                    <div className='project_img moto'></div>
                                     <div className="project_title">
-                                        <h3 className="project_name project_anime">Youco</h3>
-                                        <a href={'www.youco.co.in'} target='_blank' rel="noopener noreferrer" className="projects_link project_anime">
+                                        <h3 className="project_name project_anime">MotoSport club</h3>
+                                        <a href='https://itmtb.com/' target='_blank' rel="noopener noreferrer" className="projects_link project_anime">
                                         </a>
                                     </div>
-                                    <p className="project_description project_anime">It is a library of all the study material that you need. Thus, it helps in saving a lot of time and energy that you waste in hunting for all these essentials. Now you can thrive on getting your desired grades with ease.</p>
+                                    <p className="project_description project_anime">Student mentor of web development club at offical club of university</p>
                                 </div>
                             </li>
                         </ul>
