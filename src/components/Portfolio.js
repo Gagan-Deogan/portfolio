@@ -91,7 +91,7 @@ function Portfolio() {
                                     <div className='project_img moto'></div>
                                     <div className="project_title">
                                         <h3 className="project_name project_anime">MotoSport club</h3>
-                                        <a href='https://itmtb.com/' target='_blank' rel="noopener noreferrer" className="projects_link project_anime">
+                                        <a href='https://www.instagram.com/motosport_pup/' target='_blank' rel="noopener noreferrer" className="projects_link project_anime">
                                         </a>
                                     </div>
                                     <p className="project_description project_anime">Student mentor of web development club at offical club of university</p>
